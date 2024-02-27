@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(200, 197, 197);
+  padding: 100px;
+}
+.main_app {
+  max-width: 450px;
+  background-color: whitesmoke;
+  margin: 50px auto 40px;
+  padding: 10px 20px 10px;
+  border-radius: 10px;
+}
+
+.input_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.plus_image {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  left: -30px;
+}
+
+.input_box {
+  background-image: url(check.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: center;
+
+  height: 35px;
+  width: 100%;
+  padding-left: 70px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.ul li {
+  margin-top: 10px;
+  list-style: none;
+  padding: 7px 7px 3px 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ul li::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-image: url(radio.png);
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 20px;
+}
+
+.ul li.completed {
+  color: #555;
+  text-decoration: line-through;
+}
+
+.ul li.completed::before {
+  background-image: url(checked.png);
+}
+
+.ul li span {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  color: #555;
+  text-align: center;
+}
+
+.ul li span:hover {
+  color: aqua;
+}
+
+.bottom {
+  margin-top: 20px;
+}
+
+.bottom hr {
+  margin-bottom: 10px;
+}

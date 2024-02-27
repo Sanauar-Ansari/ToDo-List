@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="CSS\index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main_app">
+        <div class="input_line">
+          <input
+            type="text"
+            placeholder="Write your today's task.."
+            class="input_box"
+          />
+          <img onclick="add()" class="plus_image" src="CSS\plus.png" />
+        </div>
+        <ul class="ul">
+          <!-- <li class="completed">One</li>
+          <li>Two</li>
+          <li>Three</li> -->
+        </ul>
+        <div class="bottom">
+          <hr id="horizontal-line" />
+          <p id="item-left-para"></p>
+        </div>
+      </div>
+    </div>
+    <script src="JS\index.js"></script>
+  </body>
+</html>
